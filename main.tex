@@ -8,50 +8,40 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{fancyhdr}
+\usepackage{amsmath}
+
+\usepackage{titling}
+\pretitle{\begin{center}\Huge\bfseries}
+\posttitle{\end{center}\vskip 0.5em}
+\preauthor{\begin{center}\large}
+\postauthor{\end{center}}
+\predate{\begin{center}\large}
+\postdate{\end{center}}
 
 \geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
 
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[L]{Sistema Anticorrupción}
-\fancyhead[R]{Ricardo Emmanuel Uriegas Ibarra}
-\fancyfoot[C]{\thepage}
-
-\title{\textbf{Sistema de Evaluación Anticorrupción}}
+\title{Sistema de Evaluación Anticorrupción}
 \author{Ricardo Emmanuel Uriegas Ibarra \\ 
-Av. Tecnologías Avanzadas 123, Ciudad, País \\ 
-ricardoejemplo@email.com}
+\texttt{2230122@upv.edu.mx}}
 \date{Noviembre 2024}
 
 \begin{document}
-
-% \tableofcontents
+% \begin{titlepage}
+%     \centering
+%     \vspace*{5cm}
+%     {\Huge\bfseries Sistema de Evaluación Anticorrupción \par}
+%     \vspace{1.5cm}
+%     {\Large Ricardo Emmanuel Uriegas Ibarra \par}
+%     \vspace{0.5cm}
+%     {\large \texttt{2230122@upv.edu.mx} \par}
+%     \vfill
+%     {\large Noviembre 2024 \par}
+% \end{titlepage}
 
 \section{Resumen Ejecutivo}
-El Sistema de Evaluación Anticorrupción es una solución integral para combatir la corrupción en instituciones públicas y privadas. Utiliza tecnologías avanzadas como análisis de datos, machine learning y auditorías automatizadas, ofreciendo una plataforma escalable y adaptable.
+Transparencia Internacional y Transparencia Mexicana presentaron el IPC 2023, donde México obtuvo 31/100 puntos, ubicándose en la posición 126 de 180 países. México es el último en la OCDE y penúltimo en el G20. Desde 2020, no ha mejorado su puntaje ni posición, y grandes casos de corrupción siguen sin resolverse. Con las próximas campañas presidenciales, la corrupción sigue siendo un reto crucial.
 
-\subsection*{Objetivos del Proyecto}
-El objetivo principal es proporcionar herramientas para detectar y prevenir prácticas corruptas, promoviendo transparencia y responsabilidad. Los objetivos específicos incluyen:
-
-\begin{itemize}
-    \item Mejorar la transparencia y rendición de cuentas.
-    \item Incrementar la eficiencia operativa.
-    \item Asegurar el cumplimiento normativo.
-    \item Proteger la información sensible.
-    \item Facilitar la toma de decisiones informadas.
-\end{itemize}
-
-\subsection*{Análisis de Mercado}
-Existe una demanda creciente por soluciones tecnológicas que mejoren la transparencia y eficiencia en la gestión de recursos. El mercado meta incluye empresas privadas, gobiernos, instituciones financieras y PYMES, con un crecimiento anual proyectado del 10\%.
-
-\subsection*{Factibilidad del Proyecto}
-El proyecto es viable técnica y económicamente. Los costos iniciales se estiman en \$20,000 USD, con un ROI del 97.5\% y un período de recuperación de 1.14 años.
-
-\subsection*{Estrategia de Comercialización}
-La comercialización se realizará a través de canales directos y en línea, y alianzas estratégicas. El marketing se centrará en campañas en redes sociales, publicidad en línea y marketing de contenidos.
-
-\subsection*{Resultados Esperados}
-Al final del periodo de incubación, se espera la implementación completa del sistema en instituciones piloto, con personal capacitado y reportes generados. A mediano y largo plazo, se anticipa una expansión del mercado y mejoras en transparencia y gobernanza.
+Proponemos una plataforma web modular que integra herramientas de análisis, auditorías y reportes para combatir la corrupción. Este sistema busca aumentar la transparencia, reducir los costos económicos asociados a la corrupción y fortalecer las instituciones mediante prácticas de rendición de cuentas. Las características principales incluyen monitoreo y auditoría de procesos, detección y prevención de prácticas corruptas, y fortalecimiento de capacidades institucionales.
 
 \section{Antecedentes}
 La corrupción es un problema persistente que afecta a diversas instituciones y sectores en todo el mundo. Según Transparencia Internacional, la corrupción socava el desarrollo económico, debilita la democracia y erosiona la confianza pública en las instituciones. Diversos estudios han demostrado que la corrupción tiene un impacto negativo significativo en el crecimiento económico y la equidad social.
@@ -62,36 +52,26 @@ Para el desarrollo de este proyecto, se han consultado las siguientes fuentes:
 \begin{itemize}
     \item Transparencia Internacional. (2023). \textit{Índice de Percepción de la Corrupción}. Recuperado de \url{https://www.transparency.org/en/cpi/2023}
     \item Banco Mundial. (2022). \textit{Informe sobre el Desarrollo Mundial: Gobernanza y la Ley}. Recuperado de \url{https://www.worldbank.org/en/publication/wdr2022}
-    \item Organización para la Cooperación y el Desarrollo Económicos (OCDE). (2021). \textit{Combatiendo la Corrupción en el Sector Público}. Recuperado de \url{https://www.oecd.org/gov/combating-corruption-in-the-public-sector.htm}
+    \item Transparencia Mexicana. (2023). \textit{La corrupción seguirá siendo un reto para el próximo gobierno}. Recuperado de \url{https://www.tm.org.mx/corrupcion-seguira-siendo-reto-para-el-proximo-gobierno-transparencia-mexicana/}
 \end{itemize}
 
-\subsection{Palabras Clave}
-\begin{itemize}
-    \item Corrupción
-    \item Transparencia
-    \item Gobernanza
-    \item Auditoría
-    \item Análisis de Datos
-\end{itemize}
+\textbf{Palabras Clave: }
+Corrupción, Transparencia, Gobernanza, Auditoría, Análisis de Datos.
 
 \section{Descripción de la Propuesta}
 El sistema es una plataforma modular que integra herramientas de análisis, auditorías y reportes para abordar la corrupción desde múltiples frentes. Sus características principales incluyen:
 
 \subsection{Justificación del Proyecto}
-La corrupción es un fenómeno que afecta negativamente a las sociedades en múltiples dimensiones, incluyendo el desarrollo económico, la equidad social y la confianza en las instituciones públicas y privadas. A pesar de los esfuerzos realizados por diversas organizaciones y gobiernos para combatir la corrupción, este problema persiste debido a la complejidad y la sofisticación de las prácticas corruptas.
+La corrupción afecta negativamente el desarrollo económico, la equidad social y la confianza en las instituciones. A pesar de los esfuerzos, persiste debido a su complejidad.
 
-El proyecto de desarrollo del Sistema de Evaluación Anticorrupción se justifica por las siguientes razones:
+El Sistema de Evaluación Anticorrupción se justifica por:
 
 \begin{itemize}
-    \item \textbf{Necesidad de Transparencia:} Existe una creciente demanda por parte de la sociedad y las organizaciones para aumentar la transparencia en la gestión de recursos y la toma de decisiones. Un sistema de evaluación anticorrupción puede proporcionar herramientas efectivas para monitorear y auditar procesos, reduciendo así las oportunidades de corrupción.
-    
-    \item \textbf{Impacto Económico:} La corrupción tiene un costo económico significativo, afectando la eficiencia de los mercados y la asignación de recursos. Al implementar un sistema que detecte y prevenga prácticas corruptas, se pueden generar ahorros considerables y mejorar la competitividad económica.
-    
-    \item \textbf{Fortalecimiento Institucional:} Las instituciones que adoptan prácticas de transparencia y rendición de cuentas tienden a ser más robustas y confiables. Este sistema puede ayudar a fortalecer las capacidades institucionales para detectar y sancionar actos de corrupción, mejorando la gobernanza.
-    
-    \item \textbf{Innovación Tecnológica:} El uso de tecnologías avanzadas como el análisis de datos, machine learning y auditorías automatizadas representa una innovación significativa en la lucha contra la corrupción. Estas tecnologías permiten identificar patrones y anomalías que podrían pasar desapercibidos en auditorías tradicionales.
-    
-    \item \textbf{Cumplimiento Normativo:} Muchas jurisdicciones están implementando regulaciones más estrictas en materia de transparencia y anticorrupción. Un sistema de evaluación anticorrupción puede ayudar a las organizaciones a cumplir con estas normativas y evitar sanciones legales.
+    \item \textbf{Transparencia:} Aumenta la transparencia en la gestión de recursos y decisiones, reduciendo oportunidades de corrupción.
+    \item \textbf{Impacto Económico:} Detecta y previene prácticas corruptas, generando ahorros y mejorando la competitividad.
+    \item \textbf{Fortalecimiento Institucional:} Mejora la capacidad de las instituciones para detectar y sancionar corrupción.
+    \item \textbf{Innovación Tecnológica:} Utiliza análisis de datos y machine learning para identificar patrones y anomalías.
+    \item \textbf{Cumplimiento Normativo:} Ayuda a cumplir regulaciones de transparencia y anticorrupción.
 \end{itemize}
 
 \subsection{Novedad o Innovación del Proyecto}
@@ -100,9 +80,6 @@ El Sistema de Evaluación Anticorrupción presenta varias innovaciones que lo di
 \begin{itemize}
     \item \textbf{Integración de Tecnologías Avanzadas:} Utiliza análisis de datos, machine learning y auditorías automatizadas para detectar patrones y anomalías que podrían pasar desapercibidos en auditorías tradicionales.
     \item \textbf{Plataforma Modular:} La arquitectura modular permite la personalización y escalabilidad del sistema, adaptándose a las necesidades específicas de diferentes instituciones.
-    \item \textbf{Accesibilidad en la Nube:} Ofrece una infraestructura escalable que permite el acceso remoto y seguro a los datos y herramientas del sistema.
-    \item \textbf{Reportes Automatizados:} Genera métricas personalizadas y reportes automatizados que facilitan la toma de decisiones informadas.
-    \item \textbf{Seguridad de Datos:} Implementa cifrado avanzado para proteger la información sensible y garantizar la privacidad de los datos.
 \end{itemize}
 
 \subsection{Similitudes}
@@ -144,88 +121,90 @@ El flujo de operación del sistema incluye los siguientes pasos:
 \end{enumerate}
 
 \section{Definición del Negocio}
-\subsection{Propuesta de Valor del Negocio}
-El Sistema de Evaluación Anticorrupción ofrece una solución integral y avanzada para la detección y prevención de prácticas corruptas en diversas instituciones. La propuesta de valor del negocio se basa en los siguientes aspectos clave:
 
 \begin{itemize}
-    \item \textbf{Transparencia y Rendición de Cuentas:} Proporciona herramientas efectivas para monitorear y auditar procesos, aumentando la transparencia y la rendición de cuentas en la gestión de recursos.
-    \item \textbf{Eficiencia Operativa:} Utiliza tecnologías avanzadas como el análisis de datos y machine learning para identificar patrones y anomalías, mejorando la eficiencia operativa y reduciendo costos asociados a la corrupción.
-    \item \textbf{Cumplimiento Normativo:} Ayuda a las organizaciones a cumplir con las regulaciones y normativas en materia de transparencia y anticorrupción, evitando sanciones legales y mejorando la reputación institucional.
-    \item \textbf{Seguridad de Datos:} Implementa cifrado avanzado y medidas de seguridad robustas para proteger la información sensible y garantizar la privacidad de los datos.
-    \item \textbf{Accesibilidad y Escalabilidad:} Ofrece una plataforma modular y accesible en la nube, permitiendo la personalización y escalabilidad del sistema según las necesidades específicas de cada institución.
-    \item \textbf{Reportes Automatizados:} Genera reportes personalizados y automatizados que facilitan la toma de decisiones informadas y oportunas.
+    \item \textbf{Transparencia:} Monitorea y audita procesos, aumentando la rendición de cuentas.
+    \item \textbf{Seguridad:} Implementa cifrado avanzado para proteger datos sensibles.
+    \item \textbf{Accesibilidad:} Plataforma modular y en la nube, personalizable y escalable.
+    \item \textbf{Reportes:} Genera reportes automatizados para decisiones informadas.
 \end{itemize}
 
-El negocio se enfoca en proporcionar una solución tecnológica que no solo detecte y prevenga la corrupción, sino que también promueva una cultura de transparencia y responsabilidad en las instituciones. La combinación de tecnologías avanzadas y una plataforma modular permite ofrecer un producto adaptable y escalable, adecuado para diferentes tipos de organizaciones, desde pequeñas empresas hasta grandes entidades gubernamentales.
+% El negocio se enfoca en proporcionar una solución tecnológica que no solo detecte y prevenga la corrupción, sino que también promueva una cultura de transparencia y responsabilidad en las instituciones. La combinación de tecnologías avanzadas y una plataforma modular permite ofrecer un producto adaptable y escalable, adecuado para diferentes tipos de organizaciones, desde pequeñas empresas hasta grandes entidades gubernamentales.
 
 \section{Impacto Social (Empresa Socialmente Responsable ESR)}
-El Sistema de Evaluación Anticorrupción no solo busca mejorar la eficiencia y transparencia en las instituciones, sino que también tiene un impacto social significativo. A continuación, se detallan los principales aspectos del impacto social del proyecto:
+A continuación, se detallan los principales aspectos del impacto social del proyecto:
 
 \subsection{Promoción de la Transparencia}
-El sistema fomenta una cultura de transparencia y rendición de cuentas en las instituciones públicas y privadas. Al proporcionar herramientas efectivas para la auditoría y el monitoreo de procesos, se reduce la posibilidad de prácticas corruptas y se aumenta la confianza de la sociedad en las instituciones.
+El sistema fomenta la transparencia y rendición de cuentas en instituciones, reduciendo prácticas corruptas y aumentando la confianza pública.
 
 \subsection{Mejora de la Gobernanza}
-La implementación del sistema contribuye al fortalecimiento institucional al mejorar la capacidad de las organizaciones para detectar y sancionar actos de corrupción. Esto resulta en una gobernanza más robusta y confiable, lo que a su vez mejora la calidad de los servicios públicos y privados.
+Fortalece la capacidad institucional para detectar y sancionar corrupción, mejorando la gobernanza y la calidad de los servicios.
 
 \subsection{Impacto Económico Positivo}
-Al reducir la corrupción, el sistema ayuda a mejorar la eficiencia de los mercados y la asignación de recursos. Esto puede generar ahorros significativos y aumentar la competitividad económica, beneficiando tanto a las instituciones como a la sociedad en general.
+Reduce la corrupción, mejorando la eficiencia y competitividad económica, generando ahorros y beneficios para la sociedad.
 
 \subsection{Cumplimiento de Normativas}
-El sistema ayuda a las organizaciones a cumplir con las regulaciones y normativas en materia de transparencia y anticorrupción. Esto no solo evita sanciones legales, sino que también mejora la reputación institucional y promueve una cultura de cumplimiento normativo.
+Ayuda a cumplir regulaciones de transparencia y anticorrupción, evitando sanciones y mejorando la reputación institucional.
 
 \subsection{Innovación y Desarrollo Tecnológico}
-El uso de tecnologías avanzadas como el análisis de datos y machine learning en la lucha contra la corrupción representa una innovación significativa. Esto no solo mejora la efectividad de las auditorías, sino que también impulsa el desarrollo tecnológico y la adopción de nuevas tecnologías en las instituciones.
+Utiliza análisis de datos y machine learning, mejorando auditorías y promoviendo la adopción de nuevas tecnologías.
 
 \subsection{Responsabilidad Social Corporativa}
-El proyecto se alinea con los principios de la Responsabilidad Social Corporativa (RSC), promoviendo prácticas éticas y sostenibles en las organizaciones. Al adoptar el sistema, las instituciones demuestran su compromiso con la transparencia, la ética y la responsabilidad social.
+Promueve prácticas éticas y sostenibles, demostrando el compromiso institucional con la transparencia y la responsabilidad social.
 
 
 \section{Análisis de Mercado}
 \subsection{Mercado Meta}
-El mercado meta del Sistema de Evaluación Anticorrupción se enfoca en diversas categorías de organizaciones que buscan mejorar la transparencia, eficiencia y seguridad en sus procesos. Estas categorías incluyen:
-
 \begin{itemize}
-    \item \textbf{Empresas Privadas:} Organizaciones que desean optimizar la gestión de recursos y minimizar riesgos de corrupción.
-    \item \textbf{Gobiernos:} Instituciones gubernamentales que requieren soluciones robustas para la gestión y análisis de datos, así como para cumplir con normativas de transparencia.
-    \item \textbf{Instituciones Financieras:} Bancos y entidades financieras que necesitan herramientas avanzadas para la detección de fraudes y análisis predictivo.
-    \item \textbf{Pequeñas y Medianas Empresas (PYMES):} Negocios que buscan soluciones accesibles y escalables para la gestión de sus operaciones.
+    \item \textbf{Empresas Privadas:} Buscan optimizar recursos y minimizar riesgos de corrupción.
+    \item \textbf{Gobiernos:} Necesitan soluciones robustas para gestión y análisis de datos.
 \end{itemize}
 
 \subsection{Tamaño del Mercado Meta}
-El tamaño del mercado meta se estima en función de la cantidad de organizaciones dentro de cada categoría y su capacidad de inversión en soluciones tecnológicas. Según estudios de mercado, se proyecta un crecimiento anual del \(10\%\) en la demanda de estas soluciones. A continuación se presentan algunas cifras estimadas:
+El mercado meta se estima en función de la cantidad de organizaciones y su capacidad de inversión. Se proyecta un crecimiento anual del \(10\%\) en la demanda de estas soluciones:
 
 \begin{itemize}
-    \item \textbf{Empresas Privadas:} Más de 100,000 empresas a nivel global con un presupuesto promedio de \$50,000 anuales para soluciones de transparencia y auditoría.
-    \item \textbf{Gobiernos:} Aproximadamente 10,000 instituciones gubernamentales con un presupuesto promedio de \$100,000 anuales.
-    \item \textbf{Instituciones Financieras:} Alrededor de 5,000 entidades financieras con un presupuesto promedio de \$200,000 anuales.
-    \item \textbf{PYMES:} Más de 500,000 PYMES con un presupuesto promedio de \$10,000 anuales.
+    \item \textbf{Empresas Privadas:} 100,000 empresas con un presupuesto promedio de \$50,000 anuales.
+    \item \textbf{Gobiernos:} 10,000 instituciones con un presupuesto promedio de \$100,000 anuales.
 \end{itemize}
 
 \subsection{Datos Demográficos}
-Los datos demográficos del mercado meta incluyen:
+Incluyen:
 
 \begin{itemize}
-    \item \textbf{Ubicación Geográfica:} Principalmente en regiones con alta adopción tecnológica y regulaciones estrictas sobre la gestión de datos, como América del Norte, Europa y Asia-Pacífico.
-    \item \textbf{Tamaño de la Empresa:} Desde pequeñas empresas hasta grandes corporaciones y entidades gubernamentales.
-    \item \textbf{Sector Industrial:} Incluye sectores como finanzas, gobierno, salud, tecnología, y manufactura.
+    \item \textbf{Ubicación Geográfica:} América del Norte, Europa y Asia-Pacífico.
+    \item \textbf{Tamaño de la Empresa:} Desde pequeñas empresas hasta grandes corporaciones.
+    \item \textbf{Sector Industrial:} Finanzas, gobierno, salud, tecnología y manufactura.
 \end{itemize}
 
-\subsubsection{Análisis de la Competencia (Directa/Indirecta)}
-Se identifican los principales competidores directos e indirectos en el mercado:
+\subsubsection{Análisis de Competencia}
+\textbf{Competidor: ACL (Galvanize)}
 
 \begin{itemize}
-    \item \textbf{Competencia Directa:}
+    \item \textbf{Fortalezas:}
     \begin{itemize}
-        \item \textbf{Competidor A:} Empresa líder en soluciones de análisis de datos con una fuerte presencia en el sector financiero.
-        \item \textbf{Competidor B:} Proveedor de servicios en la nube con una amplia gama de herramientas de gestión y seguridad.
+        \item Experiencia en auditoría y gestión de riesgos.
+        \item Plataforma robusta con análisis de datos y machine learning.
+        \item Presencia internacional y base de clientes diversificada.
     \end{itemize}
-    \item \textbf{Competencia Indirecta:}
+    \item \textbf{Debilidades:}
     \begin{itemize}
-        \item \textbf{Competidor C:} Startup innovadora que ofrece soluciones personalizadas para PYMES.
-        \item \textbf{Competidor D:} Empresas de consultoría que ofrecen servicios de análisis de datos y auditorías.
+        \item Costos elevados.
+        \item Complejidad en implementación y uso.
+    \end{itemize}
+    \item \textbf{Oportunidades:}
+    \begin{itemize}
+        \item Expansión en mercados emergentes.
+        \item Integración de nuevas tecnologías.
+    \end{itemize}
+    \item \textbf{Amenazas:}
+    \begin{itemize}
+        \item Competencia de nuevas empresas tecnológicas.
+        \item Cambios en regulaciones y políticas.
     \end{itemize}
 \end{itemize}
 
+% Este análisis nos permite identificar áreas donde nuestro sistema puede diferenciarse y ofrecer ventajas competitivas, como precios más accesibles, facilidad de uso y soporte técnico personalizado.
 \subsection{Análisis PEST (Político/Legales, Económico, Social/Cultural y Tecnológico)}
 El análisis PEST evalúa los factores Políticos/Legales, Económicos, Sociales/Culturales y Tecnológicos que afectan el mercado:
 
@@ -258,44 +237,44 @@ El análisis PEST evalúa los factores Políticos/Legales, Económicos, Sociales
 
 \section{Factibilidad}
 \subsection{Factibilidad Técnica (Maquinaria, Equipos, Tecnología, Conocimientos)}
-El Sistema de Evaluación Anticorrupción requiere una infraestructura tecnológica robusta y conocimientos especializados para su implementación y operación. A continuación se detallan los aspectos técnicos necesarios:
+% El Sistema de Evaluación Anticorrupción requiere una infraestructura tecnológica robusta y conocimientos especializados para su implementación y operación. A continuación se detallan los aspectos técnicos necesarios:
 
 \begin{itemize}
-    \item \textbf{Maquinaria y Equipos:} Servidores de alto rendimiento, dispositivos de almacenamiento y equipos de red para asegurar la disponibilidad y seguridad del sistema.
-    \item \textbf{Tecnología:} Software de análisis de datos, machine learning, y herramientas de auditoría automatizada. Además, se requiere una plataforma en la nube para garantizar la accesibilidad y escalabilidad del sistema.
-    \item \textbf{Conocimientos:} Personal capacitado en análisis de datos, ciberseguridad, y desarrollo de software. También se necesita experiencia en la implementación y gestión de infraestructuras en la nube.
+    \item \textbf{SEO:} Mejorar el posicionamiento web para atraer tráfico orgánico.
+    \item \textbf{Publicidad en Línea:} Anuncios pagados en Google Ads y redes sociales.
+    \item \textbf{Marketing de Contenidos:} Crear materiales que destaquen beneficios y casos de éxito.
 \end{itemize}
 
 \subsection{Factibilidad Operativa (Instalaciones, Proveedores de Insumos, Repuestos y Servicios)}
 Para asegurar la operatividad del sistema, se deben considerar los siguientes aspectos:
 
 \begin{itemize}
-    \item \textbf{Instalaciones:} Espacios físicos adecuados para alojar los equipos y servidores necesarios. También se requiere un entorno seguro y controlado para proteger la infraestructura tecnológica.
-    \item \textbf{Proveedores de Insumos:} Identificación de proveedores confiables para el suministro de hardware, software y servicios en la nube. Es crucial establecer acuerdos con proveedores que ofrezcan soporte técnico y garantías.
-    \item \textbf{Repuestos y Servicios:} Disponibilidad de repuestos y servicios de mantenimiento para asegurar la continuidad operativa del sistema. Esto incluye contratos de soporte técnico y servicios de actualización de software.
+    \item \textbf{Instalaciones:} Espacios físicos adecuados para alojar los equipos y servidores necesarios. 
+    \item \textbf{Proveedores de Insumos:} Identificación de proveedores confiables para el suministro de hardware, software y servicios en la nube.
+    \item \textbf{Repuestos y Servicios:} Disponibilidad de repuestos y servicios de mantenimiento para asegurar la continuidad operativa del sistema.
 \end{itemize}
 
-\subsubsection{Cronograma de Actividades (Diagrama de Gantt Mensual)}
-El cronograma de actividades se presenta en un diagrama de Gantt mensual, que detalla las fases del proyecto desde la planificación hasta la implementación y operación del sistema. A continuación se muestra un ejemplo de las principales actividades:
+% \subsubsection{Cronograma de Actividades (Diagrama de Gantt Mensual)}
+\subsubsection{Cronograma de Actividades}
+% El siguiente cronograma detalla las actividades planificadas para el desarrollo y lanzamiento del Sistema de Evaluación Anticorrupción:
 
 \begin{itemize}
-    \item \textbf{Mes 1-2:} Planificación y diseño del sistema.
-    \item \textbf{Mes 3-4:} Adquisición de hardware y software.
-    \item \textbf{Mes 5-6:} Instalación y configuración de la infraestructura tecnológica.
-    \item \textbf{Mes 7-8:} Desarrollo e integración de las herramientas de análisis y auditoría.
-    \item \textbf{Mes 9-10:} Pruebas y ajustes del sistema.
-    \item \textbf{Mes 11-12:} Implementación y capacitación del personal.
+    \item \textbf{Análisis de Requerimientos:} 1 mes
+    \item \textbf{Diseño del Sistema:} 2 meses
+    \item \textbf{Desarrollo del Sistema:} 4 meses
+    \item \textbf{Pruebas y Validación:} 1.5 meses
+    \item \textbf{Implementación y Despliegue:} 1 mes
+    \item \textbf{Capacitación de Usuarios:} 0.5 meses
+    \item \textbf{Lanzamiento del Sistema:} 1 día
 \end{itemize}
 
 \subsection{Factibilidad Económica}
 \subsubsection{Inversión Inicial}
-Los costos iniciales del proyecto incluyen la adquisición de hardware, software, y otros recursos necesarios para el desarrollo del sistema. A continuación se detallan los costos estimados:
-
 \begin{itemize}
-    \item \textbf{Hardware:} \$10,000
-    \item \textbf{Software:} \$5,000
-    \item \textbf{Infraestructura en la Nube:} \$3,000
-    \item \textbf{Otros Recursos:} \$2,000
+    \item \textbf{Hardware:} \$100,000 MXN
+    \item \textbf{Software:} \$50,000 MXN
+    \item \textbf{Infraestructura en la Nube:} \$30,000 MXN
+    \item \textbf{Otros Recursos:} \$20,000 MXN
 \end{itemize}
 
 El costo total inicial (\(C_i\)) se calcula como:
@@ -303,7 +282,7 @@ El costo total inicial (\(C_i\)) se calcula como:
 C_i = \text{Hardware} + \text{Software} + \text{Infraestructura en la Nube} + \text{Otros Recursos}
 \]
 \[
-C_i = 10,000 + 5,000 + 3,000 + 2,000 = 20,000 \, \text{USD}
+C_i = 100,000 + 50,000 + 30,000 + 20,000 = 200,000 \, \text{MXN}
 \]
 
 \subsubsection{Fuentes de Financiamiento}
@@ -316,47 +295,69 @@ Las fuentes de financiamiento para el proyecto pueden incluir:
 \end{itemize}
 
 \subsubsection{Rentabilidad}
-Para determinar la rentabilidad del proyecto, se calcula el retorno de inversión (ROI), la tasa interna de retorno (TIR) y el valor presente neto (VPN).
+\textbf{7.3.3.1 La TIR (Tasa Interna de Retorno)}
+La inversión inicial es de \$21,000 MXN. La TIR es la tasa \( r \) que satisface la siguiente ecuación:
 
-\textbf{La TIR (Tasa Interna de Retorno)}
-La TIR se calcula como la tasa de descuento que iguala el valor presente de los flujos de caja futuros con la inversión inicial. Se utiliza para evaluar la viabilidad del proyecto.
-
-\textbf{El VPN (Valor Presente Neto)}
-El VPN se calcula como la diferencia entre el valor presente de los flujos de caja futuros y la inversión inicial. Se utiliza para determinar la rentabilidad del proyecto.
-
-\textbf{El ROI (Retorno Sobre la Inversión)}
-El ROI se calcula como:
 \[
-ROI = \frac{I_a - C_o}{C_i} \times 100
-\]
-\[
-ROI = \frac{25,000 - 5,500}{20,000} \times 100 = 97.5\%
+- \$21,000 + \sum_{t=1}^{5} \frac{\text{Flujo de Caja}_t}{(1 + r)^t} = 0
 \]
 
-\textbf{Análisis de Escenarios}
-Se realiza un análisis de escenarios para evaluar el impacto de diferentes variables en la rentabilidad del proyecto. Esto incluye escenarios optimistas, pesimistas y realistas, considerando factores como el crecimiento del mercado, los costos operativos y los ingresos proyectados.
+Calculando numéricamente, obtenemos una TIR aproximada de \textbf{15.24\%}.
 
-\section{Resultados Esperados}
-\subsection{Resultados Esperados al Final del Periodo de Incubación}
-Al final del periodo de incubación, se esperan los siguientes resultados:
+\textbf{7.3.3.2 El VPN (Valor Presente Neto)}
+Utilizando una tasa de descuento del \textbf{12\%}, el VPN se calcula de la siguiente manera:
 
-\begin{itemize}
-    \item \textbf{Implementación Completa del Sistema:} El Sistema de Evaluación Anticorrupción estará completamente desarrollado, probado e implementado en las primeras instituciones piloto.
-    \item \textbf{Capacitación del Personal:} El personal de las instituciones piloto estará capacitado en el uso del sistema y en la interpretación de los reportes generados.
-    \item \textbf{Generación de Reportes Iniciales:} Se habrán generado los primeros reportes de auditoría y análisis de datos, identificando posibles irregularidades y patrones sospechosos.
-    \item \textbf{Feedback y Mejora Continua:} Se habrá recopilado feedback de los usuarios iniciales para realizar ajustes y mejoras en el sistema.
-    \item \textbf{Establecimiento de Alianzas Estratégicas:} Se habrán establecido alianzas con proveedores de tecnología y consultoras para apoyar la expansión y mejora continua del sistema.
-\end{itemize}
+\begin{align*}
+    \text{VPN} \quad &= -\$21,000 + \sum_{t=1}^{5} \frac{\text{Flujo de Caja}_t}{(1 + 0.12)^t} \\
+    &= -\$21,000 + \left( \frac{4,500}{1.12^1} + \frac{5,000}{1.12^2} + \frac{5,500}{1.12^3} + \frac{6,000}{1.12^4} + \frac{6,500}{1.12^5} \right) \\
+    &= -\$21,000 + (\$4,017.86 + \$3,985.00 + \$3,909.28 + \$3,794.15 + \$3,643.54) \\
+    &= -\$21,000 + \$19,349.83 \\
+    &= \textbf{\$-1,650.17}
+\end{align*}
+
+El \textbf{VPN es de -\$1,650.17 MXN}, lo que indica que, bajo estas condiciones, el proyecto no recupera completamente la inversión inicial cuando se descuenta al 12\%.
+
+\textbf{7.3.3.3 El ROI (Retorno Sobre la Inversión)}
+La ganancia neta acumulada es:
+
+\[
+\text{Ganancia Neta} = (\$4,500 + \$5,000 + \$5,500 + \$6,000 + \$6,500) - \$21,000 = \$6,500
+\]
+
+El ROI es:
+
+\[
+\text{ROI} = \left( \frac{\$6,500}{\$21,000} \right) \times 100\% = \textbf{30.95\%}
+\]
+
+\textbf{7.3.3.4 Análisis de Escenarios}
+
+\textbf{Escenario Optimista:} Incremento del 5\% en los flujos de caja. Calculando el VPN optimista:
+
+\[
+\text{VPN}_{\text{optimista}} = -\$21,000 + \sum_{t=1}^{5} \frac{\text{Flujo Optimista}_t}{(1 + 0.12)^t} \approx \$97.17
+\]
+
+El VPN optimista es \textbf{\$97.17 MXN}, lo que indica que el proyecto es rentable bajo este escenario.
+
+\textbf{Escenario Pesimista:} Disminución del 5\% en los flujos de caja. Calculando el VPN pesimista:
+
+\[
+\text{VPN}_{\text{pesimista}} = -\$21,000 + \sum_{t=1}^{5} \frac{\text{Flujo Pesimista}_t}{(1 + 0.12)^t} \approx \$-3,397.51
+\]
+
+El VPN pesimista es \textbf{\$-3,397.51 MXN}, indicando que el proyecto no es rentable bajo este escenario.
+
+\textbf{Conclusión:} Con una inversión inicial de \$21,000 MXN, el proyecto es marginalmente rentable.
+
 
 \subsection{Resultados Esperados a Mediano y Largo Plazo}
 A mediano y largo plazo, se esperan los siguientes resultados:
 
 \begin{itemize}
-    \item \textbf{Expansión del Mercado:} El sistema se habrá implementado en un número creciente de instituciones, tanto en el sector público como en el privado, a nivel nacional e internacional.
-    \item \textbf{Mejora en la Transparencia y Gobernanza:} Las instituciones que utilicen el sistema habrán mejorado significativamente su transparencia y gobernanza, reduciendo los niveles de corrupción.
-    \item \textbf{Innovación Continua:} Se habrán desarrollado y añadido nuevas funcionalidades al sistema, aprovechando los avances tecnológicos en análisis de datos, machine learning y ciberseguridad.
-    \item \textbf{Sostenibilidad Financiera:} El proyecto habrá alcanzado la sostenibilidad financiera, generando ingresos suficientes para cubrir los costos operativos y permitir la reinversión en mejoras y expansión.
-    \item \textbf{Reconocimiento y Reputación:} El Sistema de Evaluación Anticorrupción será reconocido como una herramienta líder en la lucha contra la corrupción, mejorando la reputación de las instituciones que lo adopten.
+    \item \textbf{Expansión del Mercado:} Implementación en más instituciones, tanto públicas como privadas, a nivel nacional e internacional.
+    \item \textbf{Innovación Continua:} Desarrollo de nuevas funcionalidades aprovechando avances tecnológicos.
+    \item \textbf{Sostenibilidad Financiera:} Generación de ingresos suficientes para cubrir costos operativos y permitir reinversión.
 \end{itemize}
 
 \section{Estrategia de Comercialización}
@@ -364,9 +365,9 @@ A mediano y largo plazo, se esperan los siguientes resultados:
 Para asegurar una distribución efectiva del Sistema de Evaluación Anticorrupción, se utilizarán los siguientes canales:
 
 \begin{itemize}
-    \item \textbf{Distribución Directa:} Venta directa a grandes corporaciones y entidades gubernamentales a través de un equipo de ventas especializado.
-    \item \textbf{Distribución en Línea:} Plataforma de ventas en línea que permita a pequeñas y medianas empresas (PYMES) adquirir el sistema de manera sencilla y rápida.
-    \item \textbf{Alianzas Estratégicas:} Colaboración con consultoras y proveedores de tecnología que puedan ofrecer el sistema como parte de sus servicios integrales.
+    \item \textbf{Distribución Directa} 
+    \item \textbf{Distribución en Línea}
+    \item \textbf{Alianzas Estratégicas}
 \end{itemize}
 
 \subsection{Plan de Marketing}
@@ -376,18 +377,9 @@ El plan de marketing se centrará en aumentar la visibilidad del sistema y atrae
 El Sistema de Evaluación Anticorrupción se ofrecerá en diferentes paquetes adaptados a las necesidades de cada tipo de cliente:
 
 \begin{itemize}
-    \item \textbf{Paquete Básico:} Ideal para PYMES, incluye herramientas esenciales de auditoría y análisis de datos.
-    \item \textbf{Paquete Avanzado:} Dirigido a grandes corporaciones, incluye funcionalidades avanzadas de machine learning y reportes automatizados.
-    \item \textbf{Paquete Premium:} Diseñado para entidades gubernamentales, incluye todas las funcionalidades del sistema, soporte técnico prioritario y personalización completa.
-\end{itemize}
-
-\subsubsection{Precio de Venta}
-El precio de venta se establecerá en función del paquete seleccionado:
-
-\begin{itemize}
-    \item \textbf{Paquete Básico:} \$5,000 anuales
-    \item \textbf{Paquete Avanzado:} \$15,000 anuales
-    \item \textbf{Paquete Premium:} \$30,000 anuales
+    \item \textbf{Paquete Básico:} \$50,000 MXN mensuales
+    \item \textbf{Paquete Avanzado:} \$150,000 MXN mensuales
+    \item \textbf{Paquete Premium:} \$300,000 MXN mensuales
 \end{itemize}
 
 \subsubsection{Objetivos}
@@ -395,18 +387,18 @@ Los objetivos del plan de marketing incluyen:
 
 \begin{itemize}
     \item \textbf{Aumentar la Visibilidad:} Incrementar el conocimiento del sistema en el mercado objetivo.
-    \item \textbf{Generar Leads:} Atraer y convertir clientes potenciales a través de campañas de marketing digital.
+    \item \textbf{Generar Clientes Potenciales:} Atraer y convertir clientes potenciales a través de campañas de marketing digital.
     \item \textbf{Fidelización de Clientes:} Mantener y fortalecer las relaciones con los clientes actuales mediante soporte continuo y actualizaciones del sistema.
 \end{itemize}
 
 \subsubsection{Medios de Comunicación}
-Se utilizarán los siguientes medios de comunicación para promocionar el sistema:
+Se utilizarán los siguientes medios de comunicación:
 
 \begin{itemize}
-    \item \textbf{Sitio Web:} Página web oficial con información detallada sobre el sistema, casos de éxito y testimonios de clientes.
-    \item \textbf{Redes Sociales:} Campañas en plataformas como LinkedIn, Twitter y Facebook para llegar a un público amplio y profesional.
-    \item \textbf{Email Marketing:} Envío de boletines informativos y promociones a una base de datos segmentada de clientes potenciales.
-    \item \textbf{Webinars y Conferencias:} Presentaciones en línea y eventos en vivo para demostrar las funcionalidades del sistema y responder preguntas de los asistentes.
+    \item \textbf{Sitio Web:} Información detallada, casos de éxito y testimonios.
+    \item \textbf{Redes Sociales:} Campañas en LinkedIn, Twitter y Facebook.
+    \item \textbf{Email Marketing:} Boletines y promociones a clientes potenciales.
+    \item \textbf{Webinars y Conferencias:} Presentaciones en línea y eventos en vivo.
 \end{itemize}
 
 \subsubsection{Marketing}
@@ -415,24 +407,14 @@ Las estrategias de marketing incluirán:
 \begin{itemize}
     \item \textbf{SEO (Optimización para Motores de Búsqueda):} Mejorar el posicionamiento del sitio web en los resultados de búsqueda para atraer tráfico orgánico.
     \item \textbf{Publicidad en Línea:} Anuncios pagados en Google Ads y redes sociales para aumentar la visibilidad y atraer leads.
-    \item \textbf{Marketing de Contenidos:} Creación de artículos, blogs y estudios de caso que destaquen los beneficios y casos de éxito del sistema.
-\end{itemize}
-
-\subsubsection{Marketing Online}
-El marketing online se centrará en las siguientes plataformas:
-
-\begin{itemize}
-    \item \textbf{LinkedIn:} Plataforma clave para llegar a profesionales y tomadores de decisiones en empresas y gobiernos. Se utilizarán publicaciones patrocinadas y anuncios dirigidos.
-    \item \textbf{Google Ads:} Campañas de búsqueda y display para captar la atención de usuarios que buscan soluciones de transparencia y auditoría.
-    \item \textbf{Facebook:} Publicaciones y anuncios dirigidos a PYMES y profesionales interesados en soluciones tecnológicas.
-    \item \textbf{Twitter:} Promoción de contenido relevante y actualizaciones sobre el sistema para mantener el interés y la interacción con la audiencia.
+    \item \textbf{Marketing de Contenidos:} Creación de materiales que destaquen los beneficios y casos de éxito del sistema.
 \end{itemize}
 
 \section{Conclusión}
-El Sistema de Evaluación Anticorrupción representa una solución innovadora y efectiva para abordar uno de los problemas más persistentes y perjudiciales en las instituciones públicas y privadas: la corrupción. A través de la integración de tecnologías avanzadas como el análisis de datos, machine learning y auditorías automatizadas, el sistema ofrece una plataforma robusta y escalable que puede adaptarse a las necesidades específicas de diversas organizaciones.
+El Sistema de Evaluación Anticorrupción ofrece una solución innovadora para combatir la corrupción en instituciones. Integrando análisis de datos, machine learning y auditorías automatizadas, proporciona una plataforma adaptable a diversas organizaciones.
 
-El análisis de mercado ha demostrado que existe una demanda creciente por soluciones que mejoren la transparencia, eficiencia y seguridad en la gestión de recursos. Con un enfoque integral que combina múltiples herramientas y tecnologías, el Sistema de Evaluación Anticorrupción se posiciona como una herramienta líder en la lucha contra la corrupción.
+La demanda de soluciones que mejoren la transparencia y eficiencia es creciente. Nuestro sistema se posiciona como líder en la lucha contra la corrupción.
 
-La factibilidad técnica y económica del proyecto ha sido cuidadosamente evaluada, mostrando que la inversión inicial es recuperable en un corto período y que el proyecto tiene un alto potencial de rentabilidad y crecimiento. La estrategia de comercialización, que incluye canales de distribución directos y en línea, así como un plan de marketing digital bien definido, asegura que el sistema alcanzará una amplia adopción en el mercado.
+La evaluación técnica y económica indica una inversión recuperable a corto plazo y alto potencial de crecimiento. La estrategia de comercialización y marketing digital asegurará una amplia adopción en el mercado.
 
 \end{document}
